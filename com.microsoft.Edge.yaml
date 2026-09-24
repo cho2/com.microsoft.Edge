@@ -71,8 +71,8 @@ modules:
       - '*.pc'
     sources:
       - type: archive
-        url: https://download.gnome.org/sources/dconf/0.40/dconf-0.40.0.tar.xz
-        sha256: cf7f22a4c9200421d8d3325c5c1b8b93a36843650c9f95d6451e20f0bcb24533
+        url: https://download.gnome.org/sources/dconf/51/dconf-51.0.tar.xz
+        sha256: e65c1b7867f836faad9f9ee04acf5c5a6cae2bbc784833fe093207e0cb590248
         x-checker-data:
           type: gnome
           name: dconf
@@ -85,8 +85,8 @@ modules:
     sources:
       - type: git
         url: https://github.com/refi64/zypak
-        tag: v2022.04
-        commit: 55a60d110301e8dd37b631503c3524ab7baaf7aa
+        tag: v2025.09
+        commit: 693a71c5ffa80ec9c9ce2ae03b1ccc493c698e53
         x-checker-data:
           type: git
           tag-pattern: ^v([\d.]+)$
@@ -106,8 +106,8 @@ modules:
     sources:
       - type: extra-data
         # From https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable
-        url: https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_120.0.2210.91-1_amd64.deb
-        sha256: bf11e8740a6efbca3aad11b077db01f628b693fb7bba7cc87c9ab94febc8a546
+        url: https://packages.microsoft.com/repos/edge/pool/main/m/microsoft-edge-stable/microsoft-edge-stable_154.0.4258.37-1_amd64.deb
+        sha256: c6fa2974733991321b46c4064b785cdec5a14d8cddd182bc5fda057e37e7603d
         filename: edge.deb
         x-checker-data:
           type: debian-repo
@@ -115,7 +115,7 @@ modules:
           root: https://packages.microsoft.com/repos/edge
           dist: stable
           component: main
-        size: 164277270
+        size: 192792642
       - type: script
         dest-filename: stub_sandbox.sh
         commands:
